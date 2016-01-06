@@ -50,7 +50,7 @@ void setup()
 void loop() // run over and over
 {
   char ch; //Char Buffer
-  /*if(Serial.available()>0){
+  if(Serial.available()>0){
   while(Serial.available()>0){
      ch = Serial.read();
      Serial.write(ch);
@@ -58,7 +58,7 @@ void loop() // run over and over
   }
   Serial.write(ch);
   }
-  */
+  
  
   if(mySerial.available()>0){
   while(mySerial.available()>0){
