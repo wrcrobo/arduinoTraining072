@@ -1,8 +1,5 @@
 /*
-  Software serial multple serial test
  
- Receives from the hardware serial, sends to software serial.
- Receives from software serial, sends to hardware serial.
  
  The circuit: 
  * RX is digital pin 10 (connect to TX of other device)
@@ -16,7 +13,22 @@
  Not all pins on the Leonardo support change interrupts, 
  so only the following can be used for RX: 
  8, 9, 10, 11, 14 (MISO), 15 (SCK), 16 (MOSI).
- 
+
+
+
+This program uses the HM-TR RF module to wireless transmit the messages accross two arduino boards.
+Code by : Keshav Bist, [dSquadAdmin] for Robotics Club, IoE, Pashchimanchal Campus
+URL: http://keshavbist.com.np
+
+
+CIRCUIT CONFIG:
+HM-TR RF Module
+EN : 5v
+CFG: leave it
+DRX: Pin 11 on arduino
+GND: 0v
+DTX: Pin 10 
+VCC: 5V
  
  */
 #include <SoftwareSerial.h>
